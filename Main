@@ -9,6 +9,7 @@ public class Main extends Application {
     Scene scene = new Scene(bp, 500, 500);
     appStage.setScene(scene);
     appStage.setTitle("BouncyBall");
+    appS
 }
 public static void main(String[] args) {
 
