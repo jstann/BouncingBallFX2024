@@ -10,6 +10,7 @@ public Ball(int xloc, int yloc) {
   this.setCenterY(yLoc);
   this.setStroke(Color.RED);
   this.setFill(Color.RED);
+  this.setRadius(15);
   dx = 0;
   dy = 1;
 
