@@ -1,0 +1,8 @@
+import javafx.scene.layout.Pane;
+
+public class BouncePane extends Pane {
+  private Ball ball;
+
+public BouncePane() {
+setPrefSize(500, 500);
+ball = new Ball(this.getPrefWidth()/2.0, ball.getRadius()/2);
