@@ -6,3 +6,4 @@ public class BouncePane extends Pane {
 public BouncePane() {
 setPrefSize(500, 500);
 ball = new Ball(this.getPrefWidth()/2.0, ball.getRadius()/2);
+this.getChildren().add(ball);
