@@ -2,8 +2,20 @@ import javafx.scene.layout.Pane;
 
 public class BouncePane extends Pane {
   private Ball ball;
+  private MyTimer timer = new MyTimer();
 
-public BouncePane() {
-setPrefSize(500, 500);
-ball = new Ball(this.getPrefWidth()/2.0, ball.getRadius()/2);
-this.getChildren().add(ball);
+  public BouncePane() {
+  setPrefSize(500, 500);
+  ball = new Ball(this.getPrefWidth()/2.0, ball.getRadius()/2);
+  this.getChildren().add(ball);
+  timer.start();
+}
+
+private class MyTime extends ApplicationTimer {
+  public void handle(long current) {
+    ball.move();
+
+
+    }
+  }
+}
